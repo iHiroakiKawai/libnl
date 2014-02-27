@@ -44,7 +44,7 @@ noinst_PROGRAMS = \
 genl_ctrl_list_SOURCES = genl-ctrl-list.c 
 
 nf_ct_list_SOURCES = nf-ct-list.c 
-nf_ct_add_SOURCES = nf-ct-add.c 
+nf_ct_add_SOURCES = nf-ct-add.c
 nf_log_SOURCES = nf-log.c
 nf_queue_SOURCES = nf-queue.c 
 nf_monitor_SOURCES = nf-monitor.c

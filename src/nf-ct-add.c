@@ -55,8 +55,8 @@ int main(int argc, char *argv[])
 	};
 	int err, nlflags = NLM_F_CREATE;
 
- 	ct = nl_cli_ct_alloc();
- 
+	ct = nl_cli_ct_alloc();
+
 	for (;;) {
 		int c, optidx = 0;
 		enum {
@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
 			{ "zone", 1, 0, ARG_ZONE },
 			{ 0, 0, 0, 0 }
 		};
-	
+
 		c = getopt_long(argc, argv, "46q:hv:p:F:", long_opts, &optidx);
 		if (c == -1)
 			break;
@@ -120,7 +120,7 @@ int main(int argc, char *argv[])
 		case ARG_STATUS: nl_cli_ct_parse_status(ct, optarg); break;
 		case ARG_ZONE: nl_cli_ct_parse_zone(ct, optarg); break;
 		}
- 	}
+	}
 
 	if (!quiet) {
 		printf("Adding ");
